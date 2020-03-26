@@ -8,8 +8,8 @@ services:
 before_install:
     - docker build -t hoangvypfiev/docker-react -f Dockerfile.dev . 
     
-script:
-    - docker run -e CI=true hoangvypfiev/docker-react npm run test
+# script:
+#     - docker run -e CI=true hoangvypfiev/docker-react npm run test
 
 deploy:
     provider: elasticbeanstack
